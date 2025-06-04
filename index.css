@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  font-family: "open sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-page {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/puntitos-svg.svg);
+}
+
+.intro-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 17px;
+  align-items: center;
+}
+
+@media (min-width: 968px) {
+  .intro-header {
+    padding: 30px 30px;
+  }
+}
+
+.dev-logo {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 968px) {
+  .dev-logo {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.burguer {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 968px) {
+  .burguer {
+    display: none;
+  }
+}
+
+.burguer-line {
+  background-color: black;
+  width: 100%;
+  height: 7px;
+}
+
+.links-container {
+  display: none;
+}
+
+@media (min-width: 968px) {
+  .links-container {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.intro-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 968px) {
+  .intro-content {
+    flex-direction: row;
+    padding: 0 60px;
+  }
+}
+
+.intro-title {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+@media (min-width: 1260px) {
+  .intro-title {
+    font-size: 60px;
+  }
+}
+
+.programmer-logo {
+  width: 320px;
+  width: 320px;
+  justify-self: end;
+}
+@media (min-width: 968px) {
+  .programmer-logo {
+    width: 320px;
+    height: 320px;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 1260px) {
+  .programmer-logo {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.aboutme-page {
+  background-color: #141414;
+  color: white;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 32px;
+}
+
+@media (min-width: 968px) {
+  .aboutme-page {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    padding: 30px 100px;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme__title {
+  align-self: center;
+}
+@media (min-width: 968px) {
+  .aboutme__title {
+    align-self: flex-start;
+  }
+}
+.aboutme__info {
+  align-self: flex-start;
+  font-size: 16px;
+}
+@media (min-width: 968px) {
+  .aboutme__info {
+    font-size: 24px;
+  }
+}
+
+.check {
+  height: 70px;
+  width: 70px;
+  align-self: center;
+  margin-top: 20px;
+}
+@media (min-width: 968px) {
+  .check {
+    height: 230px;
+    width: 230px;
+  }
+}
+
+.services {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-left: 55px;
+  padding-right: 55px;
+  min-height: 650px;
+}
+
+.services_title {
+  color: #2c2c2c;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 1000px) {
+  .services-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+  }
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 335px;
+  width: 265px;
+}
+
+.service__image {
+  height: 138px;
+  width: 130px;
+}
+
+.service__title {
+  color: #2c2c2c;
+  margin: 0;
+}
+
+.service__text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contactme {
+  width: 100%;
+  height: 95vh;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 968px) {
+  .contactme {
+    flex-direction: row;
+    justify-content: center;
+    gap: 75px;
+  }
+}
+
+.contactme__title {
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media (min-width: 968px) {
+  .contactme__title {
+    font-size: 48px;
+    align-self: flex-start;
+    margin-top: 230px;
+  }
+}
+
+.contactme__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 425px;
+  width: 335px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: white;
+}
+
+.form__label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.form__input {
+  height: 45px;
+  width: 335px;
+  border: solid 3px #2c2c2c;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding-left: 7px;
+}
+
+#message {
+  height: 113px;
+}
+
+.form__button {
+  margin-top: 30px;
+  width: 335px;
+  height: 45px;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffd953;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer {
+  height: 60vh;
+  background-color: #eeeeee;
+  background-image: url(/images/puntitos-svg.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 16px;
+}
+
+.logo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85px;
+  height: 75px;
+}
+.footer-dev-logo {
+  height: 60px;
+  width: 60px;
+}
+.rights-reserved {
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.social-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (min-width: 968px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 190px;
+  }
+  .logo-group {
+    width: fit-content;
+    height: fit-content;
+  }
+  .footer-dev-logo {
+    height: 120px;
+    width: 120px;
+  }
+  .rights-reserved {
+    font-size: 18px;
+  }
+  .socials-container {
+    gap: 10px;
+  }
+  .socials-group {
+    gap: 10px;
+  }
+  .social-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-text {
+    font-size: 20px;
+  }
+}
